@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./index.css" rel="stylesheet">
+</head>
+<body>
+    {% extends 'base.html' %}
+    {% block noauth %}
+        <div class="container mt-5" border:1px solid red; style="width:70%">
+            <img style="width:25%" src="../../media/profile2.png"><br>
+            <div style="width:300px; height:100px; float: left;">
+                <a href="https://blog.naver.com/hongjeona0423">
+                    <div style="width:300px; height:100px; float: left;">
+                        <img src="../../media/IMG_3251.PNG" class="mt-3">
+                    </div>
+                </a>
+            </div>
+            <div style="width:200px; height:150px; float: left;">
+                <img src="../../media/제목 없음-1.png" style="width:300%;" class="mt-3">
+            </div>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="container mt-5" style="width:70%">
+            <img style="width:25%" src="../../media/포트폴리오.png"><br><br><br>
+            <img style="width:20%" src="../../media/VIDEO.png"><br>
+            <div>
+                <div style="width:500px; height:315px; float:left;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/rIif4sjGNpc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div style="width:500px; height:315px; float:right;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/BQ_naxnPDFQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <img style="width:20%" src="../../media/PHOTO.png"><br>
+            <div>
+                <div style="width:333px; height:250px; float:left;">
+                    <img style="width:100%;" src="../../media/img/IMG_04.jpg">
+                </div>
+                <div style="width:333px; height:250px;float:left;">
+                    <img style="width:100%;"  src="../../media/img/IMG_07.jpg">
+                </div>
+                <div style="width:333px; height:250px; float:left;">
+                    <img style="width:100%;"  src="../../media/img/IMG_15.jpg">
+                </div>
+                <div style="width:333px; height:250px; float:left;">
+                    <img style="width:100%;"  src="../../media/img/IMG_25.jpg">
+                </div>
+                <div style="width:333px; height:250px; float:left;">
+                    <img style="width:100%;"  src="../../media/img/IMG_26.jpg">
+                </div>
+                <div style="width:333px; height:250px; float:left;">
+                    <img style="width:100%;"  src="../../media/img/IMG_30.jpg">
+                </div>
+            </div>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br>
+            <img style="width:20%" src="../../media/DESIGN.png"><br>
+            <div>
+                <div style="width:350px; height:250px; float:left;">
+                    <img style="width:100%;" src="../../media/대지 1.png">
+                </div>
+                <div style="width:250px; height:100px; float:left;">
+                    <img style="width:100%;" src="../../media/웹미디어콘텐츠과-10112-오유빈.jpg">
+                </div>
+            </div>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br>
+            <img style="width:50%;"src="../../media/profile.png"><br>
+            <a href="{% url 'board:index' %}"><button class="btn btn-dark btn-lg" type="button" style="font-weight: bold;">BOARD</button></a>
+            <br><br><br>
+        </div>
+    {% endblock %}
+    {% block con %}
+    <div class="container mt-5" border:1px solid red; style="width:70%">
+        <img style="width:25%" src="../../media/profile2.png"><br>
+        <div style="width:300px; height:100px; float: left;">
+            <a href="https://blog.naver.com/hongjeona0423">
+                <div style="width:300px; height:100px; float: left;">
+                    <img src="../../media/IMG_3251.PNG" class="mt-3">
+                </div>
+            </a>
+        </div>
+        <div style="width:200px; height:150px; float: left;">
+            <img src="../../media/제목 없음-1.png" style="width:300%;" class="mt-3">
+        </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="container mt-5" style="width:70%">
+        <img style="width:25%" src="../../media/포트폴리오.png"><br><br><br>
+        <img style="width:20%" src="../../media/VIDEO.png"><br>
+        <div>
+            <div style="width:500px; height:315px; float:left;">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/rIif4sjGNpc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div style="width:500px; height:315px; float:right;">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/BQ_naxnPDFQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <img style="width:20%" src="../../media/PHOTO.png"><br>
+        <div>
+            <div style="width:333px; height:250px; float:left;">
+                <img style="width:100%;" src="../../media/img/IMG_04.jpg">
+            </div>
+            <div style="width:333px; height:250px;float:left;">
+                <img style="width:100%;"  src="../../media/img/IMG_07.jpg">
+            </div>
+            <div style="width:333px; height:250px; float:left;">
+                <img style="width:100%;"  src="../../media/img/IMG_15.jpg">
+            </div>
+            <div style="width:333px; height:250px; float:left;">
+                <img style="width:100%;"  src="../../media/img/IMG_25.jpg">
+            </div>
+            <div style="width:333px; height:250px; float:left;">
+                <img style="width:100%;"  src="../../media/img/IMG_26.jpg">
+            </div>
+            <div style="width:333px; height:250px; float:left;">
+                <img style="width:100%;"  src="../../media/img/IMG_30.jpg">
+            </div>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br>
+        <img style="width:20%" src="../../media/DESIGN.png"><br>
+        <div>
+            <div style="width:350px; height:250px; float:left;">
+                <img style="width:100%;" src="../../media/대지 1.png">
+            </div>
+            <div style="width:250px; height:100px; float:left;">
+                <img style="width:100%;" src="../../media/웹미디어콘텐츠과-10112-오유빈.jpg">
+            </div>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br>
+        <img style="width:50%;"src="../../media/profile.png"><br>
+        <a href="{% url 'board:index' %}"><button class="btn btn-dark btn-lg" type="button" style="font-weight: bold;">BOARD</button></a>
+        <br><br><br>
+    {% endblock %}
+</body>
+</html>

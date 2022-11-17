@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% block con %}
+
+    <div class="container mt-5" style="width:70%">
+        <h1><b>BOARD</b></h1>
+
+        <div class="text-end">
+            <a href="{% url 'board:create' %}" class="btn btn-dark">+</a>
+        </div>
+
+
+        <table class="table mt-3 table-hover">
+            <thead style="background-color: black; color:white; font-size: 20px;">
+                <tr>
+                    <th scope="col">NO</th>
+                    <th scope="col">SUBJECT</th>
+                    <th scope="col">SUMMARY</th>
+                    <th scope="col">WRITER</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% if bset %}
+                    {% for i in bset %}
+                        <tr>
+                            <th scope="row">{{ forloop.counter }}</th>
+                            <td><a class="sub" href="{% url 'board:detail' i.id %}">{{ i.subject }}</a></td>
+                            <td>{{ i.summary }}</td>
+                            <td>{{ i.writer.username }}</td>
+                        </tr>
+                    {% endfor %}
+                {% else %}
+                {% endif %}
+            </tbody>
+        </table>
+
+    </div>
+
+    
+    <style>
+        a.sub {
+            text-decoration: none;
+            color:black;
+            font-weight: bold;
+            font-size: 17px;
+        }
+        a.sub:hover {
+            color:gray;
+        }
+    </style>
+
+
+{% endblock %}
